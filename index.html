@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://bootswatch.com/5/cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="dist/app.js" defer></script>
 
     <title>⚽ Football Invitation Registration ⚽</title>
 </head>
@@ -18,11 +19,21 @@
             <p class="lead">
                 Enter your email to register
             </p>
-            <form action="https://script.google.com/macros/s/AKfycbzBkZ6oM08VKQWJprizVqdzjJxrc30D3a_GNx1ir6xaLta_KQZ7kDQjJ0NXePi7qX-F/exec" method="POST" target="_blank">
-                <input type="email" name="email" class="form-control" placeholder="Email" required/>
-                <input type="submit" class="btn btn-primary btn-block"/>
+            <form class="form-inline" action="https://script.google.com/macros/s/AKfycbzBkZ6oM08VKQWJprizVqdzjJxrc30D3a_GNx1ir6xaLta_KQZ7kDQjJ0NXePi7qX-F/exec"
+                  method="POST" target="_blank">
+                    <input type="text" name="email" class="form-control" placeholder="Username" required/>
+                    <select name="domain" id="domain" class="form-select pull-right">
+                        <option>@fulfillmenttools.com</option>
+                        <option selected>@rewe-group.com</option>
+                        <option>@rewe-digital.com</option>
+                        <option>@paymenttools.com</option>
+                        <option>@extern.rewe-digital.com</option>
+                    </select>
+                <br>
+                <input type="submit" value="Register" class="btn btn-primary btn-block"/>
             </form>
         </div>
+
     </section>
 </div>
 </body>
